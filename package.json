@@ -17,6 +17,9 @@
   "dependencies": {
     "@deepseek-ai/schemastery": "^3.0.0"
   },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-system-prompt": "*"
+  },
   "devDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
     "@types/node": "^22.0.0",
