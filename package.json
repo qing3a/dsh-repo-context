@@ -1,0 +1,43 @@
+{
+  "name": "@qing3a/dsh-repo-context",
+  "version": "0.1.0",
+  "description": "把 git 状态与仓库规范动态注入 system prompt：分支/脏文件数/最近提交 + 仓库规范指引（官方 system-prompt section/context/variable 缝隙插件）",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "cordis.patch.yml",
+    "lib"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.0.0"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "tsc -p tsconfig.json"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qing3a/dsh-repo-context.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "system-prompt",
+    "git",
+    "context"
+  ]
+}
